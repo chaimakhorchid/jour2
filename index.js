@@ -4,11 +4,9 @@ console.log(integer)
 
 
 var basic = 34
-console.log(basic)
-console.log(basic.length)
-
-basic = basic.toString()
-console.log(basic)
+var stringifield = basic
+stringifield = stringifield.toString()
+console.log(stringifield)
 
 
 var num = 1.5
@@ -54,11 +52,29 @@ if(password.length > 5){
 }
 
 
-if (score >= limit && password.length > 5) {
+if (score >= limit &&  password.length > 5) {
 	console.log("everything is good");
 }
-if (score >= limit || password.length > 5) {
+else if(score >= limit || password.length > 5) 
 	console.log("something is good");
-} else {
-	console.log("nothing is good");
+
+
+else 
+{console.log("nothing is good")}
+
+
+var month = "January";
+
+switch (month) {
+	case "January": 
+		console.log("winter");
+		break;
+	case "june": 
+		console.log("spring");
+		break;
+	case "juillet": 
+		console.log("summer");
+		break;
+	default: 
+		console.log("fall");
 }
